@@ -8,7 +8,7 @@ class Artist
 
   def self.find_by_name(name)
     @@artists.detect{|a| a.name}
-  end
+   end
 
   def initialize
     @@artists << self
@@ -17,7 +17,7 @@ class Artist
 
   def self.all
     @@artists
-  end
+   end
 
   def self.reset_all
     self.all.clear
@@ -38,6 +38,6 @@ class Artist
 
   def to_param
     name.downcase.gsub(' ', '-')
-  end
+   end
 
 end
