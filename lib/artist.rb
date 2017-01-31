@@ -41,3 +41,4 @@ class Artist
   end
 
 end
+hello=Song.new
